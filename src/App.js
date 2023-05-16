@@ -10,7 +10,7 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(url);
-      const { data } = response;
+      const { data } = response
       setJobs(response.data);
       console.log(response.data);
     } catch (error) {
